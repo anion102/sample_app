@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     @user= User.new(user_param)
     if @user.save
       #处理注册成功的情况
-      flash[:success] = "Welcome to Sample App!"
+      flash[:success] = 'Welcome to Sample App!'
       # redirect_to user_url(@user)
       redirect_to @user
     else
